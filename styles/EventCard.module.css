@@ -1,0 +1,101 @@
+.card {
+    width: 100%;
+    background: white;
+    box-shadow: 0px 0px 14px -2px #bebebe;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.head {
+    font-weight: 400;
+    font-size: 1.2em;
+    color: white;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flag {
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.vs {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+}
+
+.arrow {
+    width: 2rem;
+}
+
+.img {
+    width: 100%;
+    height: 4em;
+    background: linear-gradient(to right, #005d6f, rgba(0, 93, 111, 0.68));
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text {
+    padding: 0 20px;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.odds {
+    color: #212121;
+    border: 0.5px solid #212121;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0 1rem;
+}
+
+.text .h3 {
+    font-family: system-ui;
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.text .p {
+    font-family: system-ui;
+    color: #999999;
+    font-size: 13px;
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+}
+
+.iconbox {
+    margin: 1rem auto;
+    width: 100%;
+    background-color: #00a2c0;
+    text-align: center;
+    border: none;
+}
+
+.iconbox:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.iconbox .span {
+    font-family: system-ui;
+    font-size: small;
+    font-weight: 500;
+    color: #fff;
+}/*# sourceMappingURL=index.css.map */
