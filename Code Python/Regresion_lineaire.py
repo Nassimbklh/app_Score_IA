@@ -15,7 +15,7 @@ features = ['FTHG', 'FTAG', 'HTGS', 'ATGS', 'HTGC'
             , 'HTGD', 'ATGD', 'DiffPts', 'DiffFormPts']
 
 # Remplir les valeurs manquantes avec 0 (si nécessaire)
-data.fillna(0, inplace=True)
+#data.fillna(0, inplace=True)
 
 # Initialiser les modèles de régression linéaire
 models = {feature: LinearRegression() for feature in features}
@@ -70,7 +70,7 @@ if not home_team_data.empty and not away_team_data.empty:
         'AwayTeam': [away_team],
         'FTHG': [predicted_features['FTHG']],
         'FTAG': [predicted_features['FTAG']],
-        'FTR': [np.nan],  # La colonne FTR est initialisée avec NaN
+        'FTR': [np.nan],  # La colonne FTR est initialisée avec NaN pour être prédite ensuite
         'HTGS': [predicted_features['HTGS']],
         'ATGS': [predicted_features['ATGS']],
         'HTGC': [predicted_features['HTGC']],
@@ -99,4 +99,5 @@ if not home_team_data.empty and not away_team_data.empty:
     print("Predicted features saved to 'predicted_match_features.csv'")
 else:
     print("Les données pour les équipes spécifiées ne sont pas disponibles dans le dataset.")
+
 #mse = mean squared error
