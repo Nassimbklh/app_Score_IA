@@ -1,0 +1,54 @@
+import React, { useEffect, useState } from "react";
+import Select from "react-select";
+
+
+const TeamSelect = ({teams, value, onChange}) => {
+    const options = teams.map(team => {
+        return {
+            value: team.name,
+            image: team.image,
+            label: team.name
+        };
+    });
+    //a supp
+    useEffect(
+        () =>{
+            console.log(value);
+        }, [value]
+    );
+    
+    const handleChange = (item) => {
+        onChange(item.value);
+    };
+
+    return (
+      <Select
+        styles={{
+            control: (base, state) => ({
+                ...base,
+                width:"215px"
+            }),
+  
+        }}
+        options={options}
+        placeholder="Team"
+        value={options.find((option) => option.value === value)}
+        onChange={handleChange}
+        formatOptionLabel={(option) => (
+          <div
+            style={{
+              display: "flex",
+              "align-items": "center",
+              gap: "3px",
+            }}
+          >
+            <img src={option.image} alt={option.label} width="30" height="30" />
+            <span>{option.label}</span>
+          </div>
+        )}
+        isSearchable={false}
+      />
+    );
+};
+
+export default TeamSelect;

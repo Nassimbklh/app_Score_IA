@@ -31,8 +31,9 @@ const components = {
     return (
         <View textAlign="center" padding={tokens.space.large} backgroundColor={"#047d95"}>
           <Image
-              alt="Amplify logo"
-              src="https://docs.amplify.aws/assets/logo-dark.svg"
+              alt="AppLogo"
+              src="icon.png"
+              height="300px"
           />
         </View>
     );
