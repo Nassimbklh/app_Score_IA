@@ -55,7 +55,7 @@ export default function Home({ renderedAt }) {
             </div>*/}
             <div className={styles.view}>
               {activeComponent === 'Profile' && <Profile><button className={styles.signout} onClick={signOut}>Sign out</button></Profile>}
-              {activeComponent === 'Home' && <EventList />}
+              {activeComponent === 'Home' && <EventList onSuccess={() => setActiveComponent("History")}/>}
               {activeComponent === 'History' && <HistoryList/>}
             </div>
         </div>

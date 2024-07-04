@@ -80,6 +80,24 @@
     padding: 0.5rem;
     margin: 0 1rem;
 }
+.cote{
+    color: #212121;
+    font-size: 21px;
+    font-weight: bold;
+    display: inline-block;
+    width: 32px;
+    text-align: right;
+
+
+}
+.coteSeparator
+{
+    color: #212121;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0 1rem;
+}
 
 .text .h3 {
     font-family: system-ui;

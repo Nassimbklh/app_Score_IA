@@ -6,7 +6,7 @@ import { SportsEvent } from '@/models/SportsEvent';
 import styles from '@/styles/EventList.module.css';
 import EventCard from "@/components/eventCard";
 
-const EventList = () => {
+const EventList = ({onSuccess}) => {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
@@ -20,11 +20,11 @@ const EventList = () => {
     }, []);
 
     return (
-        <div className={styles.container}>
-            {events.map(event => (
-                <EventCard currentEvent={event} key={event.id}/>
-            ))}
-        </div>
+      <div className={styles.container}>
+        {events.map((event) => (
+          <EventCard onSuccess={onSuccess} currentEvent={event} key={event.id} />
+        ))}
+      </div>
     );
 };
 
