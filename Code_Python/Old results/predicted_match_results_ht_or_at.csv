@@ -1,0 +1,380 @@
+HomeTeam,AwayTeam,Prediction
+Man City,Liverpool,1
+Man City,Aston Villa,1
+Man City,Tottenham,1
+Man City,Chelsea,0
+Man City,Newcastle,1
+Man City,Man United,0
+Man City,West Ham,1
+Man City,Crystal Palace,1
+Man City,Brighton,1
+Man City,Bournemouth,1
+Man City,Fulham,1
+Man City,Wolves,1
+Man City,Everton,1
+Man City,Brentford,NA
+Man City,Nottm Forrest,NA
+Man City,Luton Town,NA
+Man City,Burnley,1
+Man City,Sheffield United,1
+Arsenal,Man City,1
+Arsenal,Liverpool,1
+Arsenal,Aston Villa,1
+Arsenal,Tottenham,1
+Arsenal,Chelsea,1
+Arsenal,Newcastle,1
+Arsenal,Man United,1
+Arsenal,West Ham,1
+Arsenal,Crystal Palace,1
+Arsenal,Brighton,1
+Arsenal,Bournemouth,1
+Arsenal,Fulham,1
+Arsenal,Wolves,1
+Arsenal,Everton,1
+Arsenal,Brentford,NA
+Arsenal,Nottm Forrest,NA
+Arsenal,Luton Town,NA
+Arsenal,Burnley,1
+Arsenal,Sheffield United,1
+Liverpool,Man City,1
+Liverpool,Arsenal,0
+Liverpool,Aston Villa,1
+Liverpool,Tottenham,1
+Liverpool,Chelsea,0
+Liverpool,Newcastle,1
+Liverpool,Man United,0
+Liverpool,West Ham,1
+Liverpool,Crystal Palace,1
+Liverpool,Brighton,1
+Liverpool,Bournemouth,1
+Liverpool,Fulham,1
+Liverpool,Wolves,1
+Liverpool,Everton,1
+Liverpool,Brentford,NA
+Liverpool,Nottm Forrest,NA
+Liverpool,Luton Town,NA
+Liverpool,Burnley,1
+Liverpool,Sheffield United,1
+Aston Villa,Man City,0
+Aston Villa,Arsenal,0
+Aston Villa,Liverpool,0
+Aston Villa,Tottenham,0
+Aston Villa,Chelsea,0
+Aston Villa,Newcastle,1
+Aston Villa,Man United,0
+Aston Villa,West Ham,1
+Aston Villa,Crystal Palace,1
+Aston Villa,Brighton,0
+Aston Villa,Bournemouth,1
+Aston Villa,Fulham,1
+Aston Villa,Wolves,1
+Aston Villa,Everton,0
+Aston Villa,Brentford,NA
+Aston Villa,Nottm Forrest,NA
+Aston Villa,Luton Town,NA
+Aston Villa,Burnley,1
+Aston Villa,Sheffield United,0
+Tottenham,Man City,1
+Tottenham,Arsenal,0
+Tottenham,Liverpool,1
+Tottenham,Aston Villa,1
+Tottenham,Chelsea,0
+Tottenham,Newcastle,1
+Tottenham,Man United,0
+Tottenham,West Ham,1
+Tottenham,Crystal Palace,1
+Tottenham,Brighton,1
+Tottenham,Bournemouth,1
+Tottenham,Fulham,1
+Tottenham,Wolves,1
+Tottenham,Everton,1
+Tottenham,Brentford,NA
+Tottenham,Nottm Forrest,NA
+Tottenham,Luton Town,NA
+Tottenham,Burnley,1
+Tottenham,Sheffield United,1
+Chelsea,Man City,1
+Chelsea,Arsenal,1
+Chelsea,Liverpool,1
+Chelsea,Aston Villa,1
+Chelsea,Tottenham,1
+Chelsea,Newcastle,1
+Chelsea,Man United,1
+Chelsea,West Ham,1
+Chelsea,Crystal Palace,1
+Chelsea,Brighton,1
+Chelsea,Bournemouth,1
+Chelsea,Fulham,1
+Chelsea,Wolves,1
+Chelsea,Everton,1
+Chelsea,Brentford,NA
+Chelsea,Nottm Forrest,NA
+Chelsea,Luton Town,NA
+Chelsea,Burnley,1
+Chelsea,Sheffield United,1
+Newcastle,Man City,0
+Newcastle,Arsenal,0
+Newcastle,Liverpool,0
+Newcastle,Aston Villa,1
+Newcastle,Tottenham,0
+Newcastle,Chelsea,0
+Newcastle,Man United,0
+Newcastle,West Ham,1
+Newcastle,Crystal Palace,1
+Newcastle,Brighton,0
+Newcastle,Bournemouth,1
+Newcastle,Fulham,1
+Newcastle,Wolves,1
+Newcastle,Everton,0
+Newcastle,Brentford,NA
+Newcastle,Nottm Forrest,NA
+Newcastle,Luton Town,NA
+Newcastle,Burnley,1
+Newcastle,Sheffield United,0
+Man United,Man City,1
+Man United,Arsenal,1
+Man United,Liverpool,1
+Man United,Aston Villa,1
+Man United,Tottenham,1
+Man United,Chelsea,1
+Man United,Newcastle,1
+Man United,West Ham,1
+Man United,Crystal Palace,1
+Man United,Brighton,1
+Man United,Bournemouth,1
+Man United,Fulham,1
+Man United,Wolves,1
+Man United,Everton,1
+Man United,Brentford,NA
+Man United,Nottm Forrest,NA
+Man United,Luton Town,NA
+Man United,Burnley,1
+Man United,Sheffield United,1
+West Ham,Man City,0
+West Ham,Arsenal,0
+West Ham,Liverpool,0
+West Ham,Aston Villa,1
+West Ham,Tottenham,0
+West Ham,Chelsea,0
+West Ham,Newcastle,1
+West Ham,Man United,0
+West Ham,Crystal Palace,1
+West Ham,Brighton,0
+West Ham,Bournemouth,0
+West Ham,Fulham,1
+West Ham,Wolves,1
+West Ham,Everton,0
+West Ham,Brentford,NA
+West Ham,Nottm Forrest,NA
+West Ham,Luton Town,NA
+West Ham,Burnley,0
+West Ham,Sheffield United,0
+Crystal Palace,Man City,0
+Crystal Palace,Arsenal,0
+Crystal Palace,Liverpool,0
+Crystal Palace,Aston Villa,1
+Crystal Palace,Tottenham,0
+Crystal Palace,Chelsea,0
+Crystal Palace,Newcastle,1
+Crystal Palace,Man United,0
+Crystal Palace,West Ham,1
+Crystal Palace,Brighton,0
+Crystal Palace,Bournemouth,0
+Crystal Palace,Fulham,1
+Crystal Palace,Wolves,1
+Crystal Palace,Everton,0
+Crystal Palace,Brentford,NA
+Crystal Palace,Nottm Forrest,NA
+Crystal Palace,Luton Town,NA
+Crystal Palace,Burnley,0
+Crystal Palace,Sheffield United,0
+Brighton,Man City,0
+Brighton,Arsenal,0
+Brighton,Liverpool,0
+Brighton,Aston Villa,1
+Brighton,Tottenham,0
+Brighton,Chelsea,0
+Brighton,Newcastle,1
+Brighton,Man United,0
+Brighton,West Ham,1
+Brighton,Crystal Palace,1
+Brighton,Bournemouth,1
+Brighton,Fulham,1
+Brighton,Wolves,1
+Brighton,Everton,0
+Brighton,Brentford,NA
+Brighton,Nottm Forrest,NA
+Brighton,Luton Town,NA
+Brighton,Burnley,1
+Brighton,Sheffield United,0
+Bournemouth,Man City,0
+Bournemouth,Arsenal,0
+Bournemouth,Liverpool,0
+Bournemouth,Aston Villa,1
+Bournemouth,Tottenham,0
+Bournemouth,Chelsea,0
+Bournemouth,Newcastle,1
+Bournemouth,Man United,0
+Bournemouth,West Ham,1
+Bournemouth,Crystal Palace,1
+Bournemouth,Brighton,0
+Bournemouth,Fulham,1
+Bournemouth,Wolves,1
+Bournemouth,Everton,0
+Bournemouth,Brentford,NA
+Bournemouth,Nottm Forrest,NA
+Bournemouth,Luton Town,NA
+Bournemouth,Burnley,1
+Bournemouth,Sheffield United,0
+Fulham,Man City,0
+Fulham,Arsenal,0
+Fulham,Liverpool,0
+Fulham,Aston Villa,1
+Fulham,Tottenham,0
+Fulham,Chelsea,0
+Fulham,Newcastle,1
+Fulham,Man United,0
+Fulham,West Ham,1
+Fulham,Crystal Palace,1
+Fulham,Brighton,0
+Fulham,Bournemouth,0
+Fulham,Wolves,1
+Fulham,Everton,0
+Fulham,Brentford,NA
+Fulham,Nottm Forrest,NA
+Fulham,Luton Town,NA
+Fulham,Burnley,0
+Fulham,Sheffield United,0
+Wolves,Man City,0
+Wolves,Arsenal,0
+Wolves,Liverpool,0
+Wolves,Aston Villa,1
+Wolves,Tottenham,0
+Wolves,Chelsea,0
+Wolves,Newcastle,1
+Wolves,Man United,0
+Wolves,West Ham,1
+Wolves,Crystal Palace,1
+Wolves,Brighton,0
+Wolves,Bournemouth,0
+Wolves,Fulham,1
+Wolves,Everton,0
+Wolves,Brentford,NA
+Wolves,Nottm Forrest,NA
+Wolves,Luton Town,NA
+Wolves,Burnley,0
+Wolves,Sheffield United,0
+Everton,Man City,0
+Everton,Arsenal,0
+Everton,Liverpool,0
+Everton,Aston Villa,1
+Everton,Tottenham,0
+Everton,Chelsea,0
+Everton,Newcastle,1
+Everton,Man United,0
+Everton,West Ham,1
+Everton,Crystal Palace,1
+Everton,Brighton,1
+Everton,Bournemouth,1
+Everton,Fulham,1
+Everton,Wolves,1
+Everton,Brentford,NA
+Everton,Nottm Forrest,NA
+Everton,Luton Town,NA
+Everton,Burnley,1
+Everton,Sheffield United,1
+Brentford,Man City,NA
+Brentford,Arsenal,NA
+Brentford,Liverpool,NA
+Brentford,Aston Villa,NA
+Brentford,Tottenham,NA
+Brentford,Chelsea,NA
+Brentford,Newcastle,NA
+Brentford,Man United,NA
+Brentford,West Ham,NA
+Brentford,Crystal Palace,NA
+Brentford,Brighton,NA
+Brentford,Bournemouth,NA
+Brentford,Fulham,NA
+Brentford,Wolves,NA
+Brentford,Everton,NA
+Brentford,Nottm Forrest,NA
+Brentford,Luton Town,NA
+Brentford,Burnley,NA
+Brentford,Sheffield United,NA
+Nottm Forrest,Man City,NA
+Nottm Forrest,Arsenal,NA
+Nottm Forrest,Liverpool,NA
+Nottm Forrest,Aston Villa,NA
+Nottm Forrest,Tottenham,NA
+Nottm Forrest,Chelsea,NA
+Nottm Forrest,Newcastle,NA
+Nottm Forrest,Man United,NA
+Nottm Forrest,West Ham,NA
+Nottm Forrest,Crystal Palace,NA
+Nottm Forrest,Brighton,NA
+Nottm Forrest,Bournemouth,NA
+Nottm Forrest,Fulham,NA
+Nottm Forrest,Wolves,NA
+Nottm Forrest,Everton,NA
+Nottm Forrest,Brentford,NA
+Nottm Forrest,Luton Town,NA
+Nottm Forrest,Burnley,NA
+Nottm Forrest,Sheffield United,NA
+Luton Town,Man City,NA
+Luton Town,Arsenal,NA
+Luton Town,Liverpool,NA
+Luton Town,Aston Villa,NA
+Luton Town,Tottenham,NA
+Luton Town,Chelsea,NA
+Luton Town,Newcastle,NA
+Luton Town,Man United,NA
+Luton Town,West Ham,NA
+Luton Town,Crystal Palace,NA
+Luton Town,Brighton,NA
+Luton Town,Bournemouth,NA
+Luton Town,Fulham,NA
+Luton Town,Wolves,NA
+Luton Town,Everton,NA
+Luton Town,Brentford,NA
+Luton Town,Nottm Forrest,NA
+Luton Town,Burnley,NA
+Luton Town,Sheffield United,NA
+Burnley,Man City,0
+Burnley,Arsenal,0
+Burnley,Liverpool,0
+Burnley,Aston Villa,1
+Burnley,Tottenham,0
+Burnley,Chelsea,0
+Burnley,Newcastle,1
+Burnley,Man United,0
+Burnley,West Ham,1
+Burnley,Crystal Palace,1
+Burnley,Brighton,0
+Burnley,Bournemouth,0
+Burnley,Fulham,1
+Burnley,Wolves,1
+Burnley,Everton,0
+Burnley,Brentford,NA
+Burnley,Nottm Forrest,NA
+Burnley,Luton Town,NA
+Burnley,Sheffield United,0
+Sheffield United,Man City,0
+Sheffield United,Arsenal,0
+Sheffield United,Liverpool,0
+Sheffield United,Aston Villa,1
+Sheffield United,Tottenham,0
+Sheffield United,Chelsea,0
+Sheffield United,Newcastle,1
+Sheffield United,Man United,0
+Sheffield United,West Ham,1
+Sheffield United,Crystal Palace,1
+Sheffield United,Brighton,0
+Sheffield United,Bournemouth,1
+Sheffield United,Fulham,1
+Sheffield United,Wolves,1
+Sheffield United,Everton,0
+Sheffield United,Brentford,NA
+Sheffield United,Nottm Forrest,NA
+Sheffield United,Luton Town,NA
+Sheffield United,Burnley,1
