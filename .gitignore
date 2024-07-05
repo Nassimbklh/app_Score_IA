@@ -25,4 +25,5 @@ public/sw.js.map
 **.sample
 .next/
 public/sw.js.map
+public/
 #amplify-do-not-edit-end
