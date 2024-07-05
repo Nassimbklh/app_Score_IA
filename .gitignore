@@ -2,7 +2,6 @@
 
 #amplify-do-not-edit-begin
 amplify\
-public/
 amplify/
 amplify/\#current-cloud-backend
 amplify/.config/local-*
@@ -25,5 +24,4 @@ amplifytools.xcconfig
 public/sw.js.map
 **.sample
 .next/
-public\
 #amplify-do-not-edit-end
