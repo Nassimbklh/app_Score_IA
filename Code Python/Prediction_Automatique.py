@@ -7,20 +7,20 @@ import joblib
 import csv
 
 # Charger les données
-data = pd.read_csv(r'C:\Users\sweez\Desktop\ESGI\Projet Annuel\Appli\app_Score_IA\Code Python\Données\dataset.csv')
-team_dict = pd.read_csv(r'C:\Users\sweez\Desktop\ESGI\Projet Annuel\Appli\app_Score_IA\Code Python\Données\team_dict.csv')
+data = pd.read_csv(r'/Users/nassim/Documents/ESGI/4_eme_Années/semestre_2/PA/app_Score_IA/Code Python/Données/dataset.csv')
+team_dict = pd.read_csv(r'/Users/nassim/Documents/ESGI/4_eme_Années/semestre_2/PA/app_Score_IA/Code Python/Données/team_dict.csv')
 #match = pd.read_csv('Données/predicted_Chelsea_Arsenal_20240628.csv')
 
 # Remplir les valeurs manquantes avec 0 (si nécessaire)
 #data.fillna(0, inplace=True)
 
 # Charger les modèles
-random_forest = joblib.load(r'C:\Users\sweez\Desktop\ESGI\Projet Annuel\Appli\app_Score_IA\Code Python\Modèles\Random_forest.sav')
+random_forest = joblib.load(r'/Users/nassim/Documents/ESGI/4_eme_Années/semestre_2/PA/app_Score_IA/Code Python/Modèle/Random_forest.sav')
 
-with open(r'C:\Users\sweez\Desktop\ESGI\Projet Annuel\Appli\app_Score_IA\Code Python\Modèles\models.pkl', 'rb') as file:
+with open(r'/Users/nassim/Documents/ESGI/4_eme_Années/semestre_2/PA/app_Score_IA/Code Python/Modèles/models.pkl', 'rb') as file:
     linear_models = pickle.load(file)
 
-with open(r'C:\Users\sweez\Desktop\ESGI\Projet Annuel\Appli\app_Score_IA\Code Python\Modèles\scalers.pkl', 'rb') as file:
+with open(r'/Users/nassim/Documents/ESGI/4_eme_Années/semestre_2/PA/app_Score_IA/Code Python/Modèles/scalers.pkl', 'rb') as file:
     linear_scalers = pickle.load(file)
 
 team_ids = team_dict.set_index('Team')['ID'].to_dict()
@@ -99,7 +99,7 @@ for i in range(len(teams)):
                 current_date = datetime.now().strftime("%Y%m%d")
 
                 # Spécifier le chemin où vous souhaitez enregistrer le fichier CSV
-                output_path = r'C:\Users\sweez\Desktop\ESGI\Projet Annuel\Appli\app_Score_IA\Code Python\Prédictions à prédire'
+                output_path = r'/Users/nassim/Documents/ESGI/4_eme_Années/semestre_2/PA/app_Score_IA/Code Python/Prédictions_à_prédire'
                 file_name = f'predicted_{home_team}_{away_team}_{current_date}.csv'
                 file_path = os.path.join(output_path, file_name)
 
@@ -123,7 +123,7 @@ for i in range(len(teams)):
                 predicted_results = random_forest.predict(X_test)
 
                 # Chemin du fichier CSV pour stocker les résultats
-                output_results_path = r'C:\Users\sweez\Desktop\ESGI\Projet Annuel\Appli\app_Score_IA\Code Python\predicted_match_results.csv'
+                output_results_path = r'/Users/nassim/Documents/ESGI/4_eme_Années/semestre_2/PA/app_Score_IA/Code Python/predicted_match_results.csv'
 
                 # Ouvrir le fichier en mode 'a' pour ajouter des lignes sans écraser le contenu existant
                 with open(output_results_path, mode='a', newline='') as file:
@@ -138,7 +138,7 @@ for i in range(len(teams)):
                 print("Les données pour les équipes spécifiées ne sont pas disponibles dans le dataset.")
 
                 # Chemin du fichier CSV pour stocker les résultats
-                output_results_path = r'C:\Users\sweez\Desktop\ESGI\Projet Annuel\Appli\app_Score_IA\Code Python\predicted_match_results.csv'
+                output_results_path = r'C:/Users/nassim/Documents/ESGI/4_eme_Années/semestre_2/PA/app_Score_IA/Code Python/predicted_match_results.csv'
 
                 # Ouvrir le fichier en mode 'a' pour ajouter des lignes sans écraser le contenu existant
                 with open(output_results_path, mode='a', newline='') as file:

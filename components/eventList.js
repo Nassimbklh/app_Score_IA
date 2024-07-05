@@ -12,7 +12,7 @@ const EventList = ({onSuccess}) => {
     useEffect(() => {
         const fetchEvents = async () => {
             const data = await getSportsEvents();
-            const sportsEvents = data.map(event => new SportsEvent(event.id, event.team1, event.team2, event.odds));
+            const sportsEvents = data.map(event => new SportsEvent(event.id, event.team1, event.team2, event.odds,event.result));
             setEvents(sportsEvents);
         };
 

@@ -11,7 +11,7 @@ const HistoryList = () => {
     useEffect(() => {
         const fetchEventsLocal = async () => {
             const data = JSON.parse(localStorage.getItem('PredictList')) || [];
-            const sportsEvents = data.map(event => new SportsEvent(event.id, event.team1, event.team2, event.odds));
+            const sportsEvents = data.map(event => new SportsEvent(event.id, event.team1, event.team2, event.odds, event.result));
             setEvents(sportsEvents);
         };
 

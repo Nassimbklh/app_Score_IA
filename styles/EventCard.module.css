@@ -37,12 +37,16 @@
 }
 
 .img {
-    width: 100%;
-    height: 4em;
     background: linear-gradient(to right, #005d6f, rgba(0, 93, 111, 0.68));
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
+
+    @media screen and (min-width:390px) {
+
+        flex-direction: row ;
+    }
 }
 
 .text {
@@ -53,6 +57,7 @@
     flex-direction: column;
     align-items: space-around;
 }
+
 
 .odds {
     color: #212121;

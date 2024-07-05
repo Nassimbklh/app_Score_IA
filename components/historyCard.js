@@ -7,6 +7,7 @@ import { Team } from '@/models/Team';
 
 const HistoryCard = ({currentEvent}) => {
     const [isPredicted, setIsPredicted] = useState(true);
+
     const [teams , setTeams] = useState({});
     useEffect(()=>{
         const fetchTeams = async () => {
@@ -26,7 +27,7 @@ const HistoryCard = ({currentEvent}) => {
         fetchTeams();
     },[currentEvent]);
 
-
+    console.log(currentEvent);
 
     const deletePredict = () => {
 
@@ -76,7 +77,27 @@ const HistoryCard = ({currentEvent}) => {
               <span className={styles.cote}>{currentEvent.odds.team2}</span>
             </div>
             <img className={styles.arrow} src="/arrow.svg" alt="to" />
-            <img className={styles.flag} src="/france-flag.png" alt="france" />
+            {currentEvent.result === 1 ? (
+              <img
+                className={styles.flag}
+                src={teams[currentEvent.team1]?.image}
+                alt={currentEvent.team1}
+              />
+            ) : (
+              <div>
+                <img
+                  className={styles.flag}
+                  src={teams[currentEvent.team1]?.image}
+                  alt={currentEvent.team1}
+                />
+                <span className={styles.score}> </span>
+                <img
+                  className={styles.flag}
+                  src={teams[currentEvent.team2]?.image}
+                  alt={currentEvent.team2}
+                />
+              </div>
+            )}
             <img
               className={styles.trash}
               src="/trash.svg"

@@ -1,4 +1,5 @@
 #amplify-do-not-edit-begin
+amplify/
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/logs
@@ -17,12 +18,8 @@ amplify-build-config.json
 amplify-gradle-config.json
 amplifytools.xcconfig
 .secret-*
+public/sw.js.map
 **.sample
-.DS_Store
-/.next/
-.next
 .next/
-
-#amplify-do-not-edit-end
 .DS_Store
-
+#amplify-do-not-edit-end

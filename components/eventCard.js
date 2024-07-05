@@ -89,19 +89,28 @@ const EventCard = ({ currentEvent, onSuccess }) => {
     }).then(async(result) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
+        const response = await sendPrediction({
+          selectedTeam1,
+          selectedTeam2,
+          team1odds,
+          team2odds,
+        });
+
         //enregistre en local storage dans la liste PredictList
         let predictList = JSON.parse(localStorage.getItem("PredictList")) || [];
         const sportData = {
           team1: selectedTeam1,
           team2: selectedTeam2,
           odds: { team1: odds1, team2: odds2 },
+          result: response.result,
         };
-        const sportsEvent = new SportsEvent(generateID(sportData), sportData.team1, sportData.team2, sportData.odds);
+        const sportsEvent = new SportsEvent(generateID(sportData), sportData.team1, sportData.team2, sportData.odds, sportData.result);
         predictList.push(sportsEvent);
 
         localStorage.setItem("PredictList", JSON.stringify(predictList));
         //setIsPredicted(true);
         await Swal.fire("Saved!", "", "success");
+        
         onSuccess();
       }
     });
@@ -115,7 +124,7 @@ const EventCard = ({ currentEvent, onSuccess }) => {
     <div className={styles.card}>
       <form onSubmit={handleSubmit}>
         <div className={styles.img} onClick={handleClick}>
-          <div onClick={(e) => e.stopPropagation()}>
+          <div onClick={(e) => e.stopPropagation()} className={styles.teamSelect}>
             <TeamSelect
               teams={teams.filter((team) => team.name !== selectedTeam2)}
               value={selectedTeam1}
@@ -124,7 +133,7 @@ const EventCard = ({ currentEvent, onSuccess }) => {
             />
           </div>
           <p className={styles.vs}>vs</p>
-          <div onClick={(e) => e.stopPropagation()}>
+          <div onClick={(e) => e.stopPropagation()} className={styles.teamSelect}>
             <TeamSelect
               teams={teams.filter((team) => team.name !== selectedTeam1)}
               value={selectedTeam2}
@@ -146,7 +155,7 @@ const EventCard = ({ currentEvent, onSuccess }) => {
               }}
               type="number"
               step={0.1}
-              max={10}
+              max={100}
               min={0}
             />{" "}
             -{" "}
@@ -159,7 +168,7 @@ const EventCard = ({ currentEvent, onSuccess }) => {
               }}
               type="number"
               step={0.1}
-              max={10}
+              max={100}
               min={0}
             />
           </p>
