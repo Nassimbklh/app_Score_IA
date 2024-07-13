@@ -19,11 +19,13 @@
 
 .head {
     font-weight: 400;
-    font-size: 1.2em;
+    text-align: right;
+    font-size: larger;
     color: white;
     font-style: italic;
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     gap: 1rem;
 }
 
@@ -31,17 +33,17 @@
     border-radius: 50%;
     width: 1.5em;
     height: 1.5em;
+    font-size: larger;
 }
 
 .vs {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     font-weight: 600;
     color: #000;
+    text-align: center;
 }
 
 .img {
-    width: 100%;
-    height: 4em;
     background: linear-gradient(to right, #ffffff, rgba(239, 239, 239, 0.68));
     display: flex;
     align-items: center;
@@ -82,10 +84,10 @@
 }
 .cote{
     color: #212121;
-    font-size: 21px;
+    /* font-size: 21px; */
     font-weight: bold;
     display: inline-block;
-    width: 32px;
+    width: 32px; 
     text-align: right;
 
 
@@ -93,10 +95,11 @@
 .coteSeparator
 {
     color: #212121;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-weight: bold;
-    padding: 0.5rem;
-    margin: 0 1rem;
+    text-align: center;
+    /* padding: 0.5rem;
+    margin: 0 1rem; */
 }
 
 .text .h3 {
@@ -134,4 +137,18 @@
     font-size: small;
     font-weight: 500;
     color: #fff;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+@media screen and (max-width:560px){
+
+    .grid{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    
+}

@@ -18,16 +18,13 @@ const EventCard = ({ currentEvent, onSuccess }) => {
   const textRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
-  /*   useEffect(() => {
-    let predictList = JSON.parse(localStorage.getItem("PredictList")) || [];
-    setIsPredicted(predictList.some((event) => event.id === currentEvent.id));
-  }, [currentEvent]); */
 
   useEffect(() => {
     const fetchTeams = async () => {
       const data = await getTeams();
       const teams = data.map((team) => new Team(team.name, team.image));
-      setTeams(teams);
+      setTeams(teams.toSorted((a, b) => a.name.localeCompare(b.name)));
+
     };
 
     fetchTeams();
@@ -132,7 +129,7 @@ const EventCard = ({ currentEvent, onSuccess }) => {
               required
             />
           </div>
-          <p className={styles.vs}>vs</p>
+          <span className={styles.vs}>vs</span>
           <div onClick={(e) => e.stopPropagation()} className={styles.teamSelect}>
             <TeamSelect
               teams={teams.filter((team) => team.name !== selectedTeam1)}
@@ -154,7 +151,7 @@ const EventCard = ({ currentEvent, onSuccess }) => {
                 setTeam1odds(event.target.value);
               }}
               type="number"
-              step={0.1}
+              step={0.01}
               max={100}
               min={0}
             />{" "}
@@ -167,7 +164,7 @@ const EventCard = ({ currentEvent, onSuccess }) => {
                 setTeam2odds(event.target.value);
               }}
               type="number"
-              step={0.1}
+              step={0.01}
               max={100}
               min={0}
             />

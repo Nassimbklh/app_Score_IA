@@ -19,5 +19,5 @@ amplify-build-config.json
 amplify-gradle-config.json
 amplifytools.xcconfig
 .secret-*
-/Code_Python/__pycache__
+**.sample
 #amplify-do-not-edit-end
