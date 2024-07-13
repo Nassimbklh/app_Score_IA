@@ -24,13 +24,17 @@ export const sendPrediction = async (data) => {
     try{
 
 
-        const response = await axios.post(`${process.env.API_HOST}/api/post`, data, {
-          method: "POST",
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Content-Type": "application/json",
-          },
-        });
+        const response = await axios.post(
+          "http://57.128.213.8:16385/api/post",
+          data,
+          {
+            method: "POST",
+            headers: {
+              "Access-Control-Allow-Origin": "*",
+              "Content-Type": "application/json",
+            },
+          }
+        );
         return response.data;
     }
     catch(error){
