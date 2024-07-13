@@ -77,7 +77,13 @@ const HistoryCard = ({currentEvent}) => {
               <span className={styles.cote}>{currentEvent.odds.team2}</span>
             </div>
             <img className={styles.arrow} src="/arrow.svg" alt="to" />
-            {currentEvent.result === 1 ? (
+            
+            {currentEvent.result === 3 ? ( 
+              <span>
+                Ne parie pas !
+              </span>
+            ) : (
+            currentEvent.result === 1 ? (
               <img
                 className={styles.flag}
                 src={teams[currentEvent.team1]?.image}
@@ -97,7 +103,7 @@ const HistoryCard = ({currentEvent}) => {
                   alt={currentEvent.team2}
                 />
               </div>
-            )}
+            ))}
             <img
               className={styles.trash}
               src="/trash.svg"

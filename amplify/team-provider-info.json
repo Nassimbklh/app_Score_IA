@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-appscoreia-dev-c44a0-authRole",
+      "UnauthRoleArn": "arn:aws:iam::623219780337:role/amplify-appscoreia-dev-c44a0-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::623219780337:role/amplify-appscoreia-dev-c44a0-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-appscoreia-dev-c44a0-deployment",
+      "UnauthRoleName": "amplify-appscoreia-dev-c44a0-unauthRole",
+      "StackName": "amplify-appscoreia-dev-c44a0",
+      "StackId": "arn:aws:cloudformation:eu-west-1:623219780337:stack/amplify-appscoreia-dev-c44a0/d39a7910-3eba-11ef-acf3-0276249d8bfd",
+      "AmplifyAppId": "d2zutxbhok2jhg"
+    },
+    "categories": {
+      "auth": {
+        "appscoreia12970bbd": {}
+      }
+    }
+  }
+}
