@@ -5,10 +5,6 @@ from Prediction import prediction
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/api', methods=['GET'])
-def get_message():
-    return jsonify({"message": "Hello, World!"})
-
 @app.route('/api/post', methods=['POST'])
 def post_message():
     data = request.get_json()  # Récupère les données JSON de la requête POST

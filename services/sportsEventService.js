@@ -24,12 +24,12 @@ export const sendPrediction = async (data) => {
     try{
 
 
-        const response = await axios.post("http://127.0.0.1:5000/api/post", data, {
-            method:"POST",
-            headers: {
-                'Access-Control-Allow-Origin':"*",
-                'Content-Type': 'application/json'
-                }
+        const response = await axios.post(`${API_HOST}/api/post`, data, {
+          method: "POST",
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Content-Type": "application/json",
+          },
         });
         return response.data;
     }
